@@ -53,11 +53,11 @@ header{
 /* GENERAL_SETTINGS_NAVIGATIONS (UP_&_BOT) */
 nav{
     margin: auto;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
 }
 
 .container{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -327,10 +327,11 @@ section{
 footer{
     background-color: var(---Darker_Black);
     padding: 4rem 0 1rem 0;
+    margin-top: 10svh;
 }
 
 .info{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: auto;
 }
 
@@ -393,5 +394,17 @@ footer a, nav span{
 
     .h1animato{
         font-size: 2rem;
+    }
+
+    footer h2{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 500px){
+    
+
+    footer h2{
+        font-size: 3rem;
     }
 }
