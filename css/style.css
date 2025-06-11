@@ -402,7 +402,10 @@ footer a, nav span{
 }
 
 @media (max-width: 500px){
-    
+    nav{
+    margin: auto;
+    padding: 1rem 1rem;
+    }
 
     footer h2{
         font-size: 3rem;
