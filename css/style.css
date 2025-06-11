@@ -55,6 +55,7 @@ nav{
     margin: auto;
     padding: 2rem 4rem;
 }
+
 .container{
     max-width: 1600px;
     margin: auto;
@@ -77,10 +78,10 @@ nav a, nav span{
     color: var(---White);
     text-decoration: none;
     padding-bottom: .25rem;
+    text-transform: uppercase;
 }
 
 .logo{
-    color: var(---Accents);
     font-size: 2.5rem;
     font-weight: 700;
 }/* END_GENERAL_SETTINGS_NAVIGATIONS (UP_&_BOT) */
@@ -119,6 +120,22 @@ nav a:hover::after {
 nav a:hover{
     color: var(---Accents);
 }
+
+
+/* if u already are on the page */
+.red{
+    color: var(---Accents);
+}
+
+.red::after{
+    background-color:var(---White);
+}
+
+.red:hover{
+    color: var(---White);
+}
+/* if u already are on the page */
+
 
 .search_icon{
     fill: var(---Black);
@@ -224,8 +241,13 @@ section{
     flex-wrap: wrap;
 }
 
+.title-and-description span{
+    text-transform: capitalize;
+}
+
 .title-and-description-row{
     display: flex;
+    text-transform: uppercase;
 }
 
 .title-and-description img{
@@ -313,7 +335,7 @@ footer{
     margin: auto;
 }
 
-h2{
+footer h2{
     font-size: 8rem;
     color: var(---Accents);
     margin-bottom: 5svh;
@@ -329,10 +351,13 @@ h2{
     gap: 1rem;
 }
 
+.back-to-top{
+    margin-top: 5svh;
+}
+
 footer button{
     width: 100%;
     padding: 1.5rem 0;
-    margin-top: 5svh;
     border-radius: 1.5rem;
     border: 1px solid var(---white_border);
     background-color: var(---Black);
