@@ -403,8 +403,11 @@ footer a, nav span{
 
 @media (max-width: 500px){
     nav{
-    margin: auto;
     padding: 1rem 1rem;
+    }
+    
+    .container{
+        justify-content: center;
     }
 
     footer h2{
