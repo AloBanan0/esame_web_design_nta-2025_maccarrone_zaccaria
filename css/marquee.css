@@ -1,7 +1,7 @@
 /* marquee_home_design_animation */
 .scroller{
     margin-bottom: 10svh;
-    background-color: var(---Black);
+    background-color: var(---Darker_Black);
 }
 .tag-list{
     list-style: none;
@@ -28,7 +28,7 @@
 }
 
 .scroller[data-animated=true]{
-    border-block: 1px solid var(---Black);
+    /* border-block: 1px solid var(---Darker_Black); */
     overflow: hidden;
     /* -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); */

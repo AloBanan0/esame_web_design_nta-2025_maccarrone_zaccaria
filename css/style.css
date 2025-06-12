@@ -190,8 +190,7 @@ section{
 .black_section{
     padding-block: 3rem;
     background-color: var(---Darker_Black);
-    color: white;
-    
+    color: white;  
 }
 
 .white_section{
@@ -222,7 +221,13 @@ section{
 
 /* testata */
 .testata{
+    display: flex;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 10svh;
 }
 
 
@@ -242,6 +247,10 @@ section{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.title-and-description a{
+    cursor: pointer;
 }
 
 .title-and-description span{
@@ -403,17 +412,25 @@ footer a, nav span{
     .h1animato{
         font-size: 2rem;
     }
-
+    
     footer h2{
         font-size: 5rem;
     }
-
+    
     .flex{
-    flex-direction: column;
+        flex-direction: column;
     }
-
+    
     .text{
         max-width: 100%;
+    }
+
+    .title-and-description_texts{
+        max-width: 70%;
+    }
+    
+    .container{
+        justify-content: center;
     }
 
     .footer_columns ul{
@@ -437,9 +454,6 @@ footer a, nav span{
     padding: 1rem 1rem;
     }
     
-    .container{
-        justify-content: center;
-    }
 
     footer{
     padding: 2rem 0 1rem 0;
