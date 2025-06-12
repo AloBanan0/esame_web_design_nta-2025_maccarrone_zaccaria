@@ -38,6 +38,10 @@ img{
     height: auto;
 }
 
+svg{
+    display: block;
+}
+
 body{
     font-family: "Space Grotesk", sans-serif;
     background-color: var(---White);
@@ -401,6 +405,11 @@ footer a, nav span{
 
 
 @media (max-width: 768px){
+    .testata{
+    padding-top: 13svh;
+    }
+
+    
     h2{
         font-size: 3rem;
     }
@@ -428,7 +437,15 @@ footer a, nav span{
     .title-and-description_texts{
         max-width: 70%;
     }
-    
+
+    .title-and-description-row{
+        flex-direction: column;
+    }
+
+    .column_reverse{
+        flex-direction: column-reverse;
+    }
+
     .container{
         justify-content: center;
     }
