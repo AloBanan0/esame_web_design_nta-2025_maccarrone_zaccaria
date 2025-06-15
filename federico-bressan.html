@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucrezia Viperina</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/nav-script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation" id="navigation">
+            <div class="container">
+                <div>
+                    <h1><a class="logo" href="index.html">Artistssss</a></h1>
+                </div>
+                <div class="link-pages">
+                    <ul>
+                        <li><a href="illustrazione.html">Illustrazione</a></li>
+                        <li><a href="artisti.html">Artisti</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>     
+    </header>
+<main>
+    <section class="testata black_section">
+        <img src="images/index/testata.jpg" alt="">
+    </section>
+        
+    <section class="content">
+        <p></p>
+    </section>
+</main>    
+</body>
+<footer>
+    <nav class="footernav">
+         <div class="info"> <!-- serve per racchiudere tutto -->
+            <h2>Artistssss</h2>
+            <div class="container">
+                <div class="footer_columns">
+                    <div>
+                        <ul>
+                            <li><a href="">Iscriviti alla nostra Newsletter</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <span>2025 Esame Web Design - Adele Maria Zaccaria / Alessandro Maccarrone</span>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">X</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="full-width back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <slot><p>Back to top</p></slot>
+            </button>
+        </div>
+    </nav>
+</footer>
+</html>

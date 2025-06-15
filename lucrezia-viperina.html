@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico K Bressan</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/nav-script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation" id="navigation">
+            <div class="container">
+                <div>
+                    <h1><a class="logo" href="index.html">Artistssss</a></h1>
+                </div>
+                <div class="link-pages">
+                    <ul>
+                        <li><a href="illustrazione.html">Illustrazione</a></li>
+                        <li><a href="artisti.html">Artisti</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>     
+    </header>
+<main>
+    <section class="testata black_section">
+        <img src="images/index/testata.jpg" alt="">
+    </section>
+        
+    <section class="content">
+        <p>Lucrezia Pompa in arte “Lucrezia Viperina” nasce a Roma nel 1996 che lascerà dopo poco per trasferirsi con la sua famiglia a Milano dove tuttora vive e lavora. Il suo mondo fin da bambina è quello tramandato da una famiglia di artisti colmo di immaginazione e creatività. Diplomata al liceo artistico di Brera, decide di proseguire i suoi studi all’Istituto europeo di design IED, frequentando il corso di illustrazione e animazione.</p>
+
+        <p>Si laurea cum laude in Illustrazione nel luglio 2019 avendo già partecipato con successo a numerosi concorsi o eventi no profit con “Swatch” e “Flying Tyger” e vince diversi premi tra cui quello con “AMREF” per aver contribuito all'educazione e alla divulgazione di argomenti sensibili.</p>
+            
+        <p>Il suo obiettivo è quello di avvicinarsi e stringere strette collaborazioni con diverse realtà come quella del mondo musicale, realizzando numerose copertine per differenti artisti come “Studio Murena”, “Daykoda” e "Chandelier Studio", con quella della moda, collaborando con "Laboutik" a Londra e con il marchio italiano "Australian" ed infine con il mondo della cucina e del design con "Eataly", "Apecesare", "Kartell", "Creed", "Acqua di Parma", "Apple", "BMW" e "AWLAB". Tutto questo senza però senza mai tralasciare il suo ambiente d’origine, l’editoria, realizzando copertine sia per letteratura che per giornalismo con “Add Editore" e “Sole 24 Ore”.</p>
+    </section>
+</main>    
+</body>
+<footer>
+    <nav class="footernav">
+         <div class="info"> <!-- serve per racchiudere tutto -->
+            <h2>Artistssss</h2>
+            <div class="container">
+                <div class="footer_columns">
+                    <div>
+                        <ul>
+                            <li><a href="">Iscriviti alla nostra Newsletter</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <span>2025 Esame Web Design - Adele Maria Zaccaria / Alessandro Maccarrone</span>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">X</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="full-width back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <slot><p>Back to top</p></slot>
+            </button>
+        </div>
+    </nav>
+</footer>
+</html>

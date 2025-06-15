@@ -193,7 +193,7 @@ section{
 
 
 .black_section{
-    padding-block: 3rem;
+    padding-block: 5rem;
     background-color: var(---Darker_Black);
     color: white;  
 }
@@ -278,12 +278,33 @@ section{
 
 
 /* ILLUSTRATION_PAGE */
+.hero_section{
+    padding-block: 6rem;
+    /* margin-block: 10svh; */
+    border-bottom: 1px solid var(---Black);
+}
 
+.hero_section h3{
+    font-size: 4rem
+}
+
+.hero_section p{
+    font-size: 1.5rem;
+}
+
+.hero_section .text{
+    max-width: 100%;
+}
+
+.end_chapter{
+    border-bottom: 1px solid var(---Black);
+    padding-bottom: 6rem;
+}
 
 
 /* pagina illlustrazione effetto cambio parola */
 .wrapper{
-    margin-block: 8rem;
+    margin-block: 10rem;
 }
 
 .wrapper ul{
@@ -333,7 +354,6 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-left: 2rem;
 }
 
 .artist_section h4{
@@ -346,33 +366,6 @@ section{
     text-decoration-color: #f5f5f5;
 }
 
-/* .artist_section h4{
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-}
-  
-.artist_section h4::after {
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: 0%;
-    bottom: 0;
-    left: 0;
-    transition: width .5s;
-}
-
-.black_section .artist_section h4::after{
-    background-color:var(---Accents);
-}
-.white_section .artist_section h4::after{
-    background-color:var(---Accents);
-}
-
-.artist_section h4:hover::after {
-    width: 100%;
-} */
-
 .arrow_right svg{
     rotate: -90deg;
 }
@@ -381,6 +374,8 @@ section{
     rotate: 90deg;
 }
 /* END_ARTIST_PAGE */
+
+
 
 
 /* inizio navigazione inferiore (footer) */
@@ -485,6 +480,22 @@ footer a, nav span{
         flex-direction: column;
     }
 
+    /* ARTIST_PAGE */
+    .artist_section{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .artist_section h4{
+        font-size: 4rem;
+    }
+
+    .arrow_right svg, .arrow_left svg{
+        rotate: 0deg;
+    }
+    /* END_ARTIST_PAGE */
+
+
     .column_reverse{
         flex-direction: column-reverse;
     }
@@ -509,18 +520,48 @@ footer a, nav span{
 }
 
 
+
+
 @media (max-width: 500px){
-    nav{
+nav{
     padding: 1rem 1rem;
-    }
-    
+}
+   
 
-    footer{
+
+
+/* ILLUSTRATION_PAGE */
+.hero_section h3{
+    font-size: 2rem
+}
+
+.hero_section p{
+    font-size: 1rem;
+}
+/* END_ILLUSTRATION_PAGE */
+
+
+
+
+/* ARTIST_PAGE */
+.artist_section h4{
+    font-size: 2.5rem;
+}
+
+.arrow_right svg, .arrow_left svg{
+    rotate: 0deg;
+}
+/* END_ARTIST_PAGE */
+
+
+
+
+footer{
     padding: 2rem 0 1rem 0;
-    /* margin-top: 10svh */
-    }
+        /* margin-top: 10svh */
+}
 
-    footer h2{
-        font-size: 3rem;
-    }
+footer h2{
+    font-size: 3rem;
+}
 }
