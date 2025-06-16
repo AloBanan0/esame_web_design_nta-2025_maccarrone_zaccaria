@@ -171,6 +171,10 @@ section{
     margin-bottom: 10svh;
 }
 
+.hero_section{
+    padding-block: 6rem;
+}
+
 .first_section{
     margin-top: 15svh;
 }
@@ -191,6 +195,14 @@ section{
     flex-direction: row-reverse;
 }
 
+.column-flex{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .black_section{
     padding-block: 5rem;
@@ -278,9 +290,7 @@ section{
 
 
 /* ILLUSTRATION_PAGE */
-.hero_section{
-    padding-block: 6rem;
-    /* margin-block: 10svh; */
+.illustrazione_hero{
     border-bottom: 1px solid var(---Black);
 }
 
@@ -348,6 +358,8 @@ section{
 /* END_ILLUSTRATION_PAGE */
 
 
+
+
 /* ARTIST_PAGE */
 .artist_section{
     display: flex;
@@ -377,6 +389,13 @@ section{
 
 
 
+/* ABOUT_PAGE */
+.about_section h4{
+    font-size: 2rem;
+}
+
+
+/* END_ABOUT_PAGE */
 
 /* inizio navigazione inferiore (footer) */
 footer{
