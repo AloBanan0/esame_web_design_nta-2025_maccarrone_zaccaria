@@ -261,7 +261,8 @@ section{
     flex-direction: column;
     gap: 2rem;
     border-top: 1px solid var(---Black);
-    padding-block: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .title-and-description{
@@ -384,6 +385,14 @@ section{
 
 .arrow_left svg{
     rotate: 90deg;
+}
+
+.lista_nuovi_artisti li{
+    list-style: circle;
+    text-transform: capitalize;
+}
+.lista_nuovi_artisti{
+    padding: 1rem 0 0 1rem;
 }
 /* END_ARTIST_PAGE */
 

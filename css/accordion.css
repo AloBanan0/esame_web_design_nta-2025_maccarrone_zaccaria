@@ -32,11 +32,18 @@
 
 .accordion_body{
   display: none;
-  padding-inline: 1rem;
+  /* padding-top: 2rem;
+  padding-inline: 1rem; */
+  padding: 2rem 1rem 0rem 1rem;
 }
 
 .accordion.active .accordion_body{
   display: block;
+}
+
+.accordion.active svg{
+  rotate: -180deg;
+  transition: rotate 1s;
 }
 
 /* .active, .accordion:hover {
