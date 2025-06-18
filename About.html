@@ -6,6 +6,8 @@
     <title>About this project</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    
     <script src="js/nav-script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +78,7 @@
 </body>
 <footer>
     <nav class="footernav">
-         <div class="info"> <!-- serve per racchiudere tutto -->
+         <div class="info"> <!-- serve per racchiudere tutto il footer, per dare una grandezza fissa, che poi e' stato sostituito in modo da non avere una grandezza fissa-->
             <h2>Artistssss</h2>
             <div class="container">
                 <div class="footer_columns">
@@ -97,7 +99,7 @@
                     </ul>
                 </div>
             </div>
-            <button class="full-width back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
                 <slot><p>Back to top</p></slot>
             </button>
         </div>

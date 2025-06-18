@@ -6,11 +6,40 @@
     <title>L'illustrazione</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+
     <script src="js/nav-script.js"></script>
 
+    <!-- font: sapce grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<!-- font: love_ya_like_a_sister -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+<!-- font: inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!-- font: zen tokyo zoo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+<!-- font: comic neue -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- font: grape nuts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -132,11 +161,11 @@
             <h1 class="h1animato">
                 l'illustrazione
                 <ul>
-                    <li><span>editoriale</span></li>
-                    <li><span>pubblicitaria</span></li>
-                    <li><span>flat design</span></li>
-                    <li><span>Fumetto</span></li>
-                    <li><span>Concept Art</span></li>
+                    <li class="font_love_ya_like_a_sister"><span >editoriale</span></li>
+                    <li class="font_inter"><span>pubblicitaria</span></li>
+                    <li class="font_zen_tokyo_zoo"><span>flat design</span></li>
+                    <li class="font_comic_neue"><span>Fumetto</span></li>
+                    <li class="font_grape_nuts"><span>Concept Art</span></li>
                 </ul>
             </h1>
         </section>
@@ -157,7 +186,7 @@
                         <h4>Illustrazione pubblicitaria</h4>
                         <p>Utilizzata nelle campagne pubblicitarie, l’illustrazione pubblicitaria ha l’obiettivo di promuovere prodotti o servizi in modo accattivante e persuasivo. Queste illustrazioni devono essere attraenti e spesso giocano su emozioni e desideri del pubblico.</p>
                     </div>
-                    <img src="" alt="">
+                    <img src="images/altre-pagine/illustrazione/stili/Stili_illustrazione-pubblicitaria.jpg" alt="">
                 </div>
             </section>
 
@@ -194,7 +223,7 @@
 </body>
 <footer>
     <nav class="footernav">
-        <div class="info"> <!-- serve per racchiudere tutto -->
+         <div class="info"> <!-- serve per racchiudere tutto il footer, per dare una grandezza fissa, che poi e' stato sostituito in modo da non avere una grandezza fissa-->
             <h2>Artistssss</h2>
             <div class="container">
                 <div class="footer_columns">
@@ -215,13 +244,10 @@
                     </ul>
                 </div>
             </div>
-            <button class="full-width back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-                <slot>
-                    <p>Back to top</p>
-                </slot>
+            <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <slot><p>Back to top</p></slot>
             </button>
         </div>
     </nav>
 </footer>
-
 </html>

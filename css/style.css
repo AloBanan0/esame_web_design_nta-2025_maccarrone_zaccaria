@@ -43,6 +43,11 @@ svg{
     stroke-width: 2px;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 body{
     font-family: "Space Grotesk", sans-serif;
     background-color: var(---White);
@@ -176,7 +181,7 @@ section{
 }
 
 .first_section{
-    margin-top: 15svh;
+    margin-top: 10svh;
 }
 
 .last_section{
@@ -218,6 +223,8 @@ section{
 .text{
     max-width: 50%;
 }
+
+
 
 
 /* DIFFERENT_SIZES */
@@ -319,7 +326,7 @@ section{
 }
 
 .wrapper ul{
-    max-height: 5rem;
+    max-height: 5.5rem;
     overflow: hidden;
 }
 
@@ -356,6 +363,38 @@ section{
     }
 }}
 /* fine pagina illlustrazione effetto cambio parola */
+
+.font_love_ya_like_a_sister{
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font_inter{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.font_zen_tokyo_zoo{
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font_comic_neue{
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: .2rem;
+}
+
+.font_grape_nuts{
+    font-family: "Grape Nuts", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* END_ILLUSTRATION_PAGE */
 
 
@@ -398,13 +437,16 @@ section{
 
 
 
-/* ABOUT_PAGE */
-.about_section h4{
+
+/* ARTISTs_PAGES */
+h4{
     font-size: 2rem;
+    padding-bottom: 1rem;
 }
+/* END_ARTISTs PAGES */
 
 
-/* END_ABOUT_PAGE */
+
 
 /* inizio navigazione inferiore (footer) */
 footer{

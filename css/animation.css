@@ -1,0 +1,52 @@
+.testata{
+    animation: opening 1s ease normal;
+}
+
+
+section{
+    animation: autoAnimation both;
+    animation-timeline: view(75% 15%);
+}
+
+
+@keyframes autoAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(4rem);
+        /* filter: blur(10px); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        /* filter: blur(0); */
+    }
+}
+
+
+@keyframes opening{
+    0%{
+        opacity: 0;
+        transform: translateY(6rem);
+        /* filter: blur(10px); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        /* filter: blur(0); */
+    }
+}
+
+/* .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-5rem);
+    transition: all 10s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+} */
+
+/* animazioni sezioni del java non funzionanti */
