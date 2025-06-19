@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About this project</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    
+    <script src="js/nav-script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation" id="navigation">
+            <div class="container">
+                <div>
+                    <h1><a class="logo" href="index.html">Artistssss</a></h1>
+                </div>
+                <div class="link-pages">
+                    <ul>
+                        <li><a href="illustrazione.html">Illustrazione</a></li>
+                        <li><a href="artisti.html">Artisti</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>     
+    </header>
+<main>
+    <section class="testata black_section">
+        <img src="images/index/testata.jpg" alt="">
+    </section>
+        
+    <section class="hero_section about_section breakout">
+        <h4>Ricerca e finalità</h4>
+        <p>La prima fase del nostro lavoro è stata caratterizzata dalla ricerca di un tema preciso per il nostro sito. Essendo entrambi amanti del mondo dell’illustrazione e dell’arte digitale, abbiamo deciso di dedicare il nostro sito web ad alcuni degli illustratori e creativi italiani più importanti degli ultimi anni. Questo sito vuole essere un prototipo di archivio digitale che possa mettere in risalto il lavoro di questi artisti e fornire alcune informazioni generali riguardanti la storia e i principali stili dell’illustrazione.</p>
+    </section>
+
+    <section class="black_section">
+        <div class="breakout flex reverse-row">
+            <div class="about_section text">
+                <h4>Ispirazione</h4>
+                <p>Per creare un’identità visiva adeguata per il nostro sito ci siamo ispirati a diversi siti, tra cui i siti di Summoner, Ostermoor e 11 Tanjung. Ci siamo focalizzati sugli elementi distintivi di questi siti web e a partire da essi abbiamo sviluppato le prime prove di design utilizzando Figma.</p>
+            </div>
+            <img src="images/altre-pagine/about/Ispirazione.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="white_section">
+        <div class="breakout flex column-flex">
+            <div class="about_section">
+                <h4>Raccolta dei contenuti</h4>
+                <p>In parallelo al processo di design, abbiamo iniziato a scegliere gli artisti e a raccogliere informazioni su di loro, sulle loro opere e sulla storia dell’illustrazione. Ci siamo occupati di selezionare e riadattare i testi e di scegliere le immagini da inserire. </p>
+            </div>
+            <div class="flex wrap">
+                <img src="images/altre-pagine/about/contenuti/raccolta contenuti.jpg" alt="">
+                <img src="images/altre-pagine/about/contenuti/raccolta e contenuti 2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="black_section last_section">
+        <div class="breakout flex reverse-row">
+            <div class="about_section text">
+                <h4>Design e prototipazione</h4>
+                <p>Dopo aver individuato una direzione creativa che ci soddisfaceva, abbiamo dato inizio all’ultima fase, quella dello sviluppo del prototipo finale. Abbiamo curato l’aspetto grafico ed estetico in Figma, così da avere una base pronta da convertire in HTML e CSS. Abbiamo inoltre implementato Javascript per la creazione di alcuni elementi animati e responsive.</p>
+            </div>
+            <img src="images/altre-pagine/about/Design e prototipazione.jpg" alt="">
+        </div>
+    </section>
+</main>    
+</body>
+<footer>
+    <nav class="footernav">
+         <div class="info"> <!-- serve per racchiudere tutto il footer, per dare una grandezza fissa, che poi e' stato sostituito in modo da non avere una grandezza fissa-->
+            <h2>Artistssss</h2>
+            <div class="container">
+                <div class="footer_columns">
+                    <div>
+                        <ul>
+                            <li><a href="">Iscriviti alla nostra Newsletter</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <span>2025 Esame Web Design - Adele Maria Zaccaria / Alessandro Maccarrone</span>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">X</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <slot><p>Back to top</p></slot>
+            </button>
+        </div>
+    </nav>
+</footer>
+</html>
