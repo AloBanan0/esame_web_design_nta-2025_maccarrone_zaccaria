@@ -46,6 +46,17 @@
   transition: rotate 1s;
 }
 
+.accordion-title{
+    text-transform: uppercase;
+}
+.accordion-title.after::after{
+    content: " -\00a0";
+}
+
+.accordion-title.before::before{
+    content: " -\00a0";
+}
+
 /* .active, .accordion:hover {
   background-color: #ccc;
 }

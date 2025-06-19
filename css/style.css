@@ -56,6 +56,10 @@ body{
 header{
     margin: auto;
 }
+
+.font-medievalsharp{
+    font-family: "MedievalSharp", cursive;
+}
 /* END_GENERALS */
 
 
@@ -283,10 +287,6 @@ section{
     max-width: 50%;
 }
 
-.sezioni_home h3::after{
-    content: " -\00a0";
-}
-
 .image-row_home{
     display: flex;
     gap: 1rem;
@@ -303,11 +303,13 @@ section{
 }
 
 .hero_section h3{
-    font-size: 4rem
+    font-size: 4rem;
+    font-style: italic;
 }
 
 .hero_section p{
     font-size: 1.5rem;
+    font-style: italic;
 }
 
 .hero_section .text{
@@ -465,7 +467,8 @@ footer .container{
 }
 
 footer h2{
-    font-size: 8rem;
+    font-size: 7rem;
+    text-transform: uppercase;
     color: var(---Accents);
     margin-bottom: 5svh;
 }
