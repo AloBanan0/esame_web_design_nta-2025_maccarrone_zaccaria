@@ -260,7 +260,54 @@ section{
     align-items: center;
 
     margin: 0;
-    padding-top: 10svh;
+    padding-top: 8svh;
+}
+
+.testata-gradient{
+    position: relative;
+}
+
+.gradient{
+    position: absolute;
+    inset: 0;
+    
+    background-color: rgba( 0,0,0,.6);
+}
+
+.gradient h1{
+    color: var(---White);
+}
+
+.gradient h1.home{
+    color: var(---Accents);
+}
+
+.gradient h1{
+    position: absolute;
+    width: 90%;
+    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 9rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.gradient p{
+    position: absolute;
+
+    width: 80%;
+    text-align: center;
+    
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 1.5rem;
 }
 /* END_TESTATA */
 
@@ -514,16 +561,65 @@ footer a, nav span{
 
 
 
+@media (max-width: 1024px){
+    .gradient h1{
+    font-size: 6rem;
+}
+
+.gradient p{
+    font-size: 1rem;
+}
+}
+
+
+
 
 @media (max-width: 768px){
-    .testata{
-    padding-top: 13svh;
+    
+    /* UPPER_NAVIGATION */
+    nav{
+        padding: 1rem 1rem;
     }
 
+    .navigation .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* END_UPPER_NAVIGATION */
+
     
+
+
+    /* GENERAL_SECTIONS */
+    .first_section{
+        margin-top: 0;    
+    }
+
+
+
+    /* TESTATA */
+    .testata{
+        padding-top: 13svh;
+    }
+
+    .gradient h1{
+        font-size: 5rem;
+        top: 40%;
+    }
+
+    .gradient p{
+        font-size: 1rem;
+        top: 60%;
+    }
+    /* END_TESTATA */
+    
+
+
+
     h2{
         font-size: 3rem;
     }
+
 
     .wrapper ul{
         max-height: 2rem;
@@ -543,14 +639,6 @@ footer a, nav span{
     
     .text{
         max-width: 100%;
-    }
-
-    .title-and-description_texts{
-        max-width: 70%;
-    }
-
-    .title-and-description-row{
-        flex-direction: column;
     }
 
     /* ARTIST_PAGE */
@@ -578,7 +666,6 @@ footer a, nav span{
     }
 
     .footer_columns ul{
-    /* display: flex; */
     flex-direction: column;
     gap: .5rem;
     }
@@ -596,10 +683,17 @@ footer a, nav span{
 
 
 @media (max-width: 500px){
-nav{
-    padding: 1rem 1rem;
+ 
+/* TESTATA */
+.gradient h1{
+    font-size: 2.5rem;
 }
-   
+
+.gradient p{
+    font-size: .8rem;
+}
+/* END_TESTATA */
+
 
 
 
@@ -637,4 +731,14 @@ footer{
 footer h2{
     font-size: 3rem;
 }
+}
+
+@media (max-width: 320px){
+    .gradient h1{
+        top: 35%;
+    }
+
+    .gradient p{
+        top: 70%;
+    }
 }
