@@ -295,7 +295,9 @@ section{
     text-transform: uppercase;
 }
 
-
+.lungo h1{
+    top: 40%;
+}
 
 .gradient p{
     position: absolute;
@@ -308,6 +310,10 @@ section{
     transform: translate(-50%, -50%);
     
     font-size: 1.5rem;
+}
+
+.lungo p{
+    top: 75%;
 }
 /* END_TESTATA */
 
@@ -606,10 +612,18 @@ footer a, nav span{
         font-size: 5rem;
         top: 40%;
     }
-
+    
     .gradient p{
         font-size: 1rem;
         top: 60%;
+    }
+    
+    .lungo h1{
+        font-size: 4rem;
+        top: 40%;
+    }
+    .lungo p{
+        top: 75%;
     }
     /* END_TESTATA */
     
@@ -740,5 +754,13 @@ footer h2{
 
     .gradient p{
         top: 70%;
+    }
+
+    .lungo h1{
+        font-size: 2rem;
+        top: 35%;
+    }
+    .lungo p{
+        top: 75%;
     }
 }
